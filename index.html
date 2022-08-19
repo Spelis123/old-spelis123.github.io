@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body background="sedfioufsduihjsdfi.png">
+<body background="mainbg.png">
 <title>Spelis's Projects</title>
 <link rel="icon" href="Spelis.png">
 <style>
@@ -13,6 +13,13 @@ body {
   width: 100%; /* Set a specific width */
   background-color: hsla(0, 0%, 0%, 0.75); /* Dark-grey background */
   overflow: auto;
+  margin: 0% 0% 50px 0%
+}
+.icon-bar:hover {
+  width: 100%; /* Set a specific width */
+  background-color: hsla(0, 0%, 0%, 0.75); /* Dark-grey background */
+  overflow: auto;
+  margin: 0% 0% 50px 0%
 }
 
 .icon-bar a {
@@ -20,13 +27,15 @@ body {
   display: block; /* Make the links appear below each other instead of side-by-side */
   text-align: center; /* Center-align text */
   padding: 16px 16px; /* Add some padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
+  transition: all 0.3s bounce; /* Add transition for hover effects */
   color: white; /* White text color */
   font-size: 36px; /* Increased font-size */
+  height: 45px;
 }
 
 .icon-bar a:hover {
   color: #0077ff; /* Add a hover color */
+  background-color: rgba(0, 0, 0, 0.8)
 }
 
 .icon-bar a.split {
@@ -61,6 +70,7 @@ body {
   </style>
 
 <div class="icon-bar">
+  
   <a href="https://github.com/Spelis123"target="_blank"><img src="github.png" 
     width="30"
     height="30"> Github</i></a>
@@ -73,10 +83,42 @@ body {
   <a href="https://discord.gg/FxRmZfQnRs"target="_blank"><img src="dc.png"
     width="30"
     height="30"> Discord</i></a>
+  <a href="blog.html"class="split"><img src="blog.png"
+    width="30"
+    height="30"> Blog</i></a>
 </div>
 
-<h1 style="text-align: center;"><img src="LOGO.png" alt="Logo idk"></h1>
-
+<style>
+  .logotext {
+    --textcolor: #0091ff;
+    text-align: center;
+    font-family: minecraft;
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--textcolor);
+    text-shadow: 1px 1px 1px #0062fe,
+        1px 2px 1px #0061fd,
+        1px 3px 1px #0060fc,
+        1px 4px 1px #0059fb,
+        1px 5px 1px #0058fa,
+        1px 6px 1px #0057f9,
+        1px 7px 1px #0056f8,
+        1px 8px 1px #0055f7,
+        1px 9px 1px #0054f6,
+        1px 10px 1px #0053f5,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+  }
+  .logotext a {
+    color: var(--textcolor);
+  }
+  .logotext a:hover {
+    color: var(--textcolor);
+  }
+</style>
+<div class="logotext">SPELIS123.<a href="https://github.com/Spelis123">GITHUB</a>.IO</div>
 <style>
   .box {  
     border-radius: 40px;
@@ -86,33 +128,31 @@ body {
     display: block;
     text-align: center;
     float: left;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
     width: 379px;
     filter: drop-shadow(5px 5px 10px #000);
     transition: all 0.5s ease;
   }
   .box:hover {
-    color: lightgray;
+    color: rgb(255, 255, 255);
     margin: 0px 50px 0%;
     transition: all 0.5s ease;
   }
   .box a:hover {
-    color: turquoise
+    color: rgb(0, 89, 255, 1);
   }
-  .box:after {
-    background-color: black;
-    width: 379px;
-    height: 10%
+  .box a {
+    color: rgb(255, 255, 255, 0.5)
   }
 </style>
 
 <div class="box">
   <h1>Skin To PFP</h1><p>(includes source code)<br>(made in Python)<p><h1>
-  <a href="https://github.com/Spelis123/skintopfp/archive/refs/heads/main.zip"target="_blank"><img src="STP.png"><br>⭳ Skin To PFP</a></h1>
+  <a href="https://github.com/Spelis123/skintopfp/archive/refs/heads/main.zip"target="_blank"><img src="STP.png"><br>⭳ Download</a>
 </div>
 <div class="box">
   <h1>Skin To PFP</h1><p>(includes source code)<br>(made in Python)<p><h1>
-  <a href="https://github.com/Spelis123/skintopfp/archive/refs/heads/main.zip"target="_blank"><img src="STP.png"><br>⭳ Skin To PFP</a></h1>
+  <a href="https://github.com/Spelis123/skintopfp/archive/refs/heads/main.zip"target="_blank"><img src="STP.png"><br>⭳ Download</a></h1>
 </div>
 
 <style>
