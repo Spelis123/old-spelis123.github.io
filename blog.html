@@ -1,84 +1,10 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body background="blackstone.png">
 <title>Spelis's Blog</title>
 <link rel="icon" href="Spelis.png">
-<style>
+<link rel="stylesheet" href="styles.css" />
 
-body {
-  margin: 0;
-  font-family:Minecraft;
-  background-image: url("diorite.png");
-  color: black
-}
-.dark-mode {
-  background-image: url("blackstone.png");
-  color: white
-}
-
-.icon-bar {
-  width: 100%; /* Set a specific width */
-  background-color: hsla(0, 0%, 0%, 0.75); /* Dark-grey background */
-  overflow: auto;
-  margin: 0% 0% 50px 0%
-}
-.icon-bar:hover {
-  width: 100%; /* Set a specific width */
-  background-color: hsla(0, 0%, 0%, 0.75); /* Dark-grey background */
-  overflow: auto;
-  margin: 0% 0% 50px 0%
-}
-
-.icon-bar a {
-  float: left;
-  display: block; /* Make the links appear below each other instead of side-by-side */
-  text-align: center; /* Center-align text */
-  padding: 16px 16px; /* Add some padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 36px; /* Increased font-size */
-  height: 45px;
-}
-
-.icon-bar a:hover {
-  color: #0077ff; /* Add a hover color */
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: all 0.3s ease
-}
-
-.icon-bar a.split {
-  float: right;
-  color: white;
-}
-</style>
-<style>
-input {
-  padding: 5px;
-  font-size: 27px;
-  border-width: 1px;
-  border-color: #000000;
-  background-color: #4c4c4c;
-  color: #ffffff;
-  border-style: solid;
-  border-radius: 10px;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-family: Minecraft
-}
-input:focus {
-  outline:none;
-}
-input:after {
-  position:absolute;
-  width: 30px;
-  height: 30px;
-  background-color:aqua;
-  content: "";
-  top:5;
-  bottom:5;
-  left:5;
-  right:5;
-}
-</style>
 <style>
   a:link {
     background-color: transparent;
@@ -105,77 +31,6 @@ input:after {
     text-decoration: none;
   }
   </style>
-<style>
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #00a6ff;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-  input:checked + .slider {
-    background-color: #3f3f3f;
-  }
-
-  input:focus + .slider {
-    box-shadow: 0 0 1px #3f3f3f;
-  }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-
-  .slider.round:before {
-    border-radius: 50%;
-  }
-</style>
-
-<script>
-  function toggledarkmodelol() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    document.cookie("mode=", document.body)
-  }
-</script>
 
 <div class="icon-bar">
   
@@ -183,22 +38,23 @@ input:after {
     width="30"
     height="30"></i>
   <input type="text" id="searchquery" name="search" autocomplete="off"></a>
-  <a onclick="toggledarkmodelol()"><img src="darkmode.png"
-    width="30"
-    height="30"></i> Toggle dark mode</a>
+  <a id="reloadembed">SELECT</a>
   <a href="index.html"class="split"><img src="index.png"
     width="30"
     height="30"> Home</i></a>
 </div>
+<script>
+  var idk1 = document.getElementById("myText").value;
+  var idk2 = "posts/" += idk1 += "/id" += idk1 += ".html";
+  function reloadembed() {
+    document.getElementById("searchquery").src=idk2;
+  };
 
-<style>
-  h1 {
-    font-size: 72px;
-    margin: 50px
-  }
-</style>
-<h1>Blog Start Page. Welcome!</h1>
-
+  document.getElementById('reloadembed').onclick = function () {
+    reloadembed();
+  };
+</script>
+<embed type="text/html" src=posts/1/id1.html width="100%" height="10000px">
 
 </body>
 </html>
