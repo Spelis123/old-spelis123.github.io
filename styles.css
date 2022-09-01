@@ -47,6 +47,14 @@ h0 span{
     color: #efefef; /* Add a visited color */
     font-style:italic;
   }
+  .icon-bar marginifier {
+    width:100%;
+    background-color: hsla(0, 0%, 0%, 0);
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:45px
+  }
   
   .icon-bar a.split {
     float: right;
@@ -134,10 +142,10 @@ h0 span{
     .box desc {
       background:#00000000;
       width:80%;
-      height:125px;
+      height:0px;
       position:absolute;
       left:10%;
-      bottom:0px;
+      bottom:140px;
       z-index:-1;
       transition: all 0.3s ease;
       border-top: 10px dashed dimgray
