@@ -133,14 +133,14 @@ h0 span{
     }
     .box desc {
       background:#00000000;
-      width:100%;
+      width:80%;
       height:125px;
       position:absolute;
-      left:0px;
+      left:10%;
       bottom:0px;
       z-index:-1;
       transition: all 0.3s ease;
-      border-top: 10px solid turquoise
+      border-top: 10px dashed dimgray
     }
     .box info {
       position: absolute;
