@@ -21,6 +21,8 @@ h0 span{
   background-color: hsla(0, 0%, 0%, 0.75); /* Dark-grey background */
   overflow: auto;
   position:fixed;
+  visibility:hidden;
+  transition: all 0.5s ease;
 }
   .icon-bar:hover {
     width: 100%; /* Set a specific width */
@@ -47,13 +49,17 @@ h0 span{
     color: #efefef; /* Add a visited color */
     font-style:italic;
   }
-  .icon-bar marginifier {
-    width:100%;
-    background-color: hsla(0, 0%, 0%, 0);
+  .icon-barm {
+    width:80px;
+    height:80px;
+    background-color: white;
     position:absolute;
-    top:0px;
-    left:0px;
-    margin:45px
+    margin: 5px;
+    border-radius:10px;
+    color:#000;
+    font-size:420%;
+    text-align:center;
+    vertical-align:-50%
   }
   
   .icon-bar a.split {
