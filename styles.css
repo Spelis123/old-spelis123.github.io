@@ -1,11 +1,10 @@
 @font-face {
   src: url("Minecraft.otf");
-  font-family: 'Minecraft'
+  font-family: 'arial'
 }
 body {
     margin: 0;
-    font-family: 'Minecraft';
-    font-family: Minecraft;
+    font-family: 'arial';
   }
 h0{
   text-align:justify;
@@ -20,8 +19,8 @@ h0 span{
   width: 100%; /* Set a specific width */
   background-color: hsla(0, 0%, 0%, 0.75); /* Dark-grey background */
   overflow: auto;
-  position:fixed;
-  visibility:hidden;
+  position:static;
+  visibility:visible;
   transition: all 0.5s ease;
 }
   .icon-bar:hover {
@@ -48,18 +47,6 @@ h0 span{
   .icon-bar a:visited {
     color: #efefef; /* Add a visited color */
     font-style:italic;
-  }
-  .icon-barm {
-    width:80px;
-    height:80px;
-    background-color: white;
-    position:absolute;
-    margin: 5px;
-    border-radius:10px;
-    color:#000;
-    font-size:420%;
-    text-align:center;
-    vertical-align:-50%
   }
   
   .icon-bar a.split {
@@ -89,9 +76,25 @@ h0 span{
       background-color: transparent;
       text-decoration: none;
     }
+    #gh:hover {
+      color:#9B59B6;
+      background-color:#4e285ccc
+    } 
+    #yt:hover {
+      color:#ff0000;
+      background-color:#800000cc
+    } 
+    #tv:hover {
+      color:#7148D3;
+      background-color:#341b6fcc
+    } 
+    #dc:hover {
+      color:#728FD1;
+      background-color:#28417bcc
+    } 
     .logotext {
       --textcolor: #0091ff;
-      text-align: center;
+      text-align: right;
       font-family: minecraft;
       font-size: 4em;
       font-weight: 700;
