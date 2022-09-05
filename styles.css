@@ -178,13 +178,13 @@ h0 span{
     /* Tooltip text */
     .box info .tooltiptext {
       visibility: hidden;
-      width: 120px;
+      width: 200px;
       background-color: black;
       color: #fff;
       text-align: center;
       padding: 5px 0;
       border-radius: 6px;
-      font-size:15px;
+      font-size:20px;
      
       /* Position the tooltip text - see examples below! */
       position: absolute;
@@ -259,3 +259,6 @@ h0 span{
     *::-webkit-scrollbar-thumb:active {
       background-color: #0079FF;
     }
+#border {
+  border-radius:50px
+}
