@@ -22,6 +22,7 @@ h0 span{
   position:static;
   visibility:visible;
   transition: all 0.5s ease;
+  margin:0 0 20px 0
 }
   .icon-bar:hover {
     width: 100%; /* Set a specific width */
@@ -95,7 +96,7 @@ h0 span{
     .logotext {
       --textcolor: #0091ff;
       text-align: right;
-      font-family: minecraft;
+      font-family: 'arial';
       font-size: 4em;
       font-weight: 700;
       color: var(--textcolor);
@@ -214,7 +215,7 @@ h0 span{
       border-style: solid;
       border-radius: 10px;
       text-shadow: 2px 2px 5px rgb(0, 0, 0);
-      font-family: Minecraft
+      font-family: 'arial'
     }
     input:focus {
       outline:none;
