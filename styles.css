@@ -137,7 +137,7 @@ h0 span{
       position: relative;
       border-radius: 40px;
       background-color:hsla(0, 0%, 0%, 0.5);
-      margin: 10px 25px 0%;
+      margin: 10px 25px 0;
       padding: 25px 100px 25px 100px;
       text-align: center;
       color: rgba(255, 255, 255, 0.5);
@@ -149,7 +149,7 @@ h0 span{
     }
     .box:hover {
       color: rgb(255, 255, 255);
-      margin: 0px 25px 10px;
+      margin: 0 25px 10px;
       transition: all 0.5s ease;
     }
     .box a:hover {
