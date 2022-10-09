@@ -115,53 +115,65 @@ h0 span{
       1px 25px 35px rgba(16,16,16,0.2),
       1px 30px 60px rgba(16,16,16,0.4);
     }
-    .logotext a {
-      color: var(--textcolor);
-    }
-    .logotext a:hover {
-      color: var(--textcolor);
-    }
-    .boxbox {
-      overflow-x: scroll;
-      overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
-      white-space: nowrap;
-      width: calc(100% - 10px - 10%);
-      height: 500px;
-      background:#00408080;
-      border: 5px solid #0080ff;
-      border-radius:40px 40px 20px 20px;
-      margin:0% 5% 5% 5%;
-      padding: 5% 1% 1% 1%;
-      background: linear-gradient(180deg, #0080ff 0%, #0080ff 10%, #00408080 10%, #00408080 100%);
-    }
     .box {  
       position: relative;
-      border-radius: 40px;
+      border-radius: 10px;
       background-color:hsla(0, 0%, 0%, 0.5);
-      margin: 0 12px 0 13px;
-      padding: 25px 100px 25px 100px;
+      margin: 5px;
+      padding: 10px 10px 10px 10px;
       text-align: center;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255);
       filter: drop-shadow(5px 5px 10px #000);
       transition: all 0.5s ease;
-      float: none;
-      display: inline-block;
-      zoom: 1;
+      float:left;
+      display:block;
+      width:min-content;
+      height:min-content;
+      border:5px solid rgba(0, 0, 0,0.5)
+    }
+    .box h1 {
+      text-shadow:5px 5px #2f2f2f;
+    }
+    .box p {
+      text-shadow:2px 2px #2f2f2f;
+    }
+    #right.box {
+      float: right
     }
     .box:hover {
       color: rgb(255, 255, 255);
       transition: all 0.5s ease;
+      background-color:#000000bf;
+    }
+    #mctp.box:hover {
+      color:#749e3b;
+      background-color:#442e1ebf
+    }
+    #yt.box:hover {
+      color:#ffffff;
+      background-color:#400000bf
     }
     .box a:hover {
-      color: rgb(0, 89, 255, 1);
+      color: rgb(0, 89, 255);
     }
     .box a {
-      color: rgb(255, 255, 255, 0.5)
+      color: rgb(255, 255, 255)
     }
     .box iframe {
       border: 5px solid #101010;
-      background-color: #202020
+      background-color: #202020;
+      width:calc(fit-content + 10px);
+      height:calc(fit-content + 10px);
+    }
+    .box img {
+      width:fit-content;
+      height:fit-content;
+      position:relative;
+      text-shadow:0 0 3px white
+    }
+    .box img#Small {
+      width:20px;
+      height:20px
     }
     .box desc {
       background:#00000000;
@@ -174,23 +186,15 @@ h0 span{
       transition: all 0.3s ease;
       border-top: 10px dashed dimgray
     }
-    .box info {
-      position: fixed;
-      width:50px;
-      height:50px;
-      left:5px;
-      top:5px;
-      color:#fff;
-      font-size:40px
-    }
     .footer {
       position: fixed;
-      left: 0;
+      left: 10%;
       bottom: 0;
-      width: 100%;
+      width: 80%;
       background-color: hsla(0, 0%, 0%, 0.75);
       color: white;
       text-align: center;
+      border-radius:40px 40px 0 0
     }
     input {
       padding: 5px;
@@ -218,19 +222,6 @@ h0 span{
       left:5;
       right:5;
     }
-    *::-webkit-scrollbar {
-      width: 0px;
-    }
-    *::-webkit-scrollbar-track {
-      background-color: #00000000;
-      border-radius: 0px 0px 15px 15px;
-    }
-    
-    *::-webkit-scrollbar-thumb {
-      border-radius: 0px 0px 3px 3px;
-      background-color: #0080FF;
-      border: 0px solid #000000;
-    }
 #border {
-  border-radius:50px
+  border-radius:100%
 }
