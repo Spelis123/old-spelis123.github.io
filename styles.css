@@ -115,6 +115,18 @@ h0 span{
       1px 25px 35px rgba(16,16,16,0.2),
       1px 30px 60px rgba(16,16,16,0.4);
     }
+    .boxpreview {
+      float:left;
+      width:max-content;
+    }
+    .boxpreview h1 {
+      font-size: 50px;
+      text-align: center;
+      width:max-content;
+    }
+    .boxdiv {
+      float:right
+    }
     .box {  
       position: relative;
       border-radius: 10px;
@@ -125,17 +137,18 @@ h0 span{
       color: rgba(255, 255, 255);
       filter: drop-shadow(5px 5px 10px #000);
       transition: all 0.5s ease;
-      float:left;
-      display:block;
-      width:min-content;
+      display: block;
+      width:250px;
       height:min-content;
-      border:5px solid rgba(0, 0, 0,0.5)
+      border:5px solid rgba(0, 0, 0,0.5);
     }
     .box h1 {
       text-shadow:5px 5px #2f2f2f;
+      font-size: 20px;
     }
     .box p {
       text-shadow:2px 2px #2f2f2f;
+      font-size: 10px;
     }
     #right.box {
       float: right
@@ -162,29 +175,18 @@ h0 span{
     .box iframe {
       border: 5px solid #101010;
       background-color: #202020;
-      width:calc(fit-content + 10px);
-      height:calc(fit-content + 10px);
+      width:230px;
+      height:auto;
     }
     .box img {
-      width:fit-content;
-      height:fit-content;
+      width:100px;
+      height:100px;
       position:relative;
       text-shadow:0 0 3px white
     }
     .box img#Small {
       width:20px;
       height:20px
-    }
-    .box desc {
-      background:#00000000;
-      width:80%;
-      height:0px;
-      position:absolute;
-      left:10%;
-      bottom:140px;
-      z-index:-1;
-      transition: all 0.3s ease;
-      border-top: 10px dashed dimgray
     }
     .footer {
       position: fixed;
